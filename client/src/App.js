@@ -3,6 +3,7 @@ import CreateForm from "./views/CreateForm"
 import Dashboard from "./views/Dashboard";
 import Details from "./views/Details"
 import Update from "./views/Update"
+import Main from "./views/Main";
 
 
 
@@ -16,7 +17,7 @@ function App() {
         <Link to="/products">Dashboard</Link>
 
         <Routes>
-
+          <Route path="" element={<Main />} />
           <Route path="/products/new" element={<CreateForm />}></Route>
           <Route path="/products/" element={<Dashboard />}></Route>
           <Route path="/products/:id" element={<Details />}></Route>
